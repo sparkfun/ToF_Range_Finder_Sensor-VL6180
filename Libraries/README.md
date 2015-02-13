@@ -1,1 +1,1 @@
-See https://github.com/sparkfun/SparkFun_VL6180_Time_of_Flight_Library for library
+Please see the [library repo](https://github.com/sparkfun/SparkFun_VL6180_Time_of_Flight_Library) for the most up-to-date code.
