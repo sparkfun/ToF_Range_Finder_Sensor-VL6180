@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -81,12 +82,24 @@
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -113,11 +126,13 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -15963,147 +15978,6 @@ Various fiducial points for machine vision alignment.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="VL6180">
-<packages>
-<package name="VL6180">
-<smd name="1" x="-1.875" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="2" x="-1.125" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="3" x="-0.375" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="4" x="0.375" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="5" x="1.125" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="6" x="1.875" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="7" x="1.875" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="8" x="1.125" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="9" x="0.375" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="10" x="-0.375" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="11" x="-1.125" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<smd name="12" x="-1.875" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
-<wire x1="-2.4" y1="1.4" x2="2.4" y2="1.4" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="1.4" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.2032" layer="21"/>
-<text x="-2.54" y="1.778" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-<circle x="-1.905" y="-0.381" radius="0.127" width="0.2032" layer="21"/>
-<polygon width="0.127" layer="31">
-<vertex x="-1.875" y="-0.825" curve="-90"/>
-<vertex x="-1.725" y="-0.975" curve="-90"/>
-<vertex x="-1.875" y="-1.125" curve="-90"/>
-<vertex x="-2.025" y="-0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-1.125" y="-0.825" curve="-90"/>
-<vertex x="-0.975" y="-0.975" curve="-90"/>
-<vertex x="-1.125" y="-1.125" curve="-90"/>
-<vertex x="-1.275" y="-0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-0.375" y="-0.825" curve="-90"/>
-<vertex x="-0.225" y="-0.975" curve="-90"/>
-<vertex x="-0.375" y="-1.125" curve="-90"/>
-<vertex x="-0.525" y="-0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="0.375" y="-0.825" curve="-90"/>
-<vertex x="0.525" y="-0.975" curve="-90"/>
-<vertex x="0.375" y="-1.125" curve="-90"/>
-<vertex x="0.225" y="-0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="1.125" y="-0.825" curve="-90"/>
-<vertex x="1.275" y="-0.975" curve="-90"/>
-<vertex x="1.125" y="-1.125" curve="-90"/>
-<vertex x="0.975" y="-0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="1.875" y="-0.825" curve="-90"/>
-<vertex x="2.025" y="-0.975" curve="-90"/>
-<vertex x="1.875" y="-1.125" curve="-90"/>
-<vertex x="1.725" y="-0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="1.875" y="1.125" curve="-90"/>
-<vertex x="2.025" y="0.975" curve="-90"/>
-<vertex x="1.875" y="0.825" curve="-90"/>
-<vertex x="1.725" y="0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="1.125" y="1.125" curve="-90"/>
-<vertex x="1.275" y="0.975" curve="-90"/>
-<vertex x="1.125" y="0.825" curve="-90"/>
-<vertex x="0.975" y="0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="0.375" y="1.125" curve="-90"/>
-<vertex x="0.525" y="0.975" curve="-90"/>
-<vertex x="0.375" y="0.825" curve="-90"/>
-<vertex x="0.225" y="0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-0.375" y="1.125" curve="-90"/>
-<vertex x="-0.225" y="0.975" curve="-90"/>
-<vertex x="-0.375" y="0.825" curve="-90"/>
-<vertex x="-0.525" y="0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-1.125" y="1.125" curve="-90"/>
-<vertex x="-0.975" y="0.975" curve="-90"/>
-<vertex x="-1.125" y="0.825" curve="-90"/>
-<vertex x="-1.275" y="0.975" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-1.875" y="1.125" curve="-90"/>
-<vertex x="-1.725" y="0.975" curve="-90"/>
-<vertex x="-1.875" y="0.825" curve="-90"/>
-<vertex x="-2.025" y="0.975" curve="-90"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="VL6180">
-<pin name="GND" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="SDA" x="-20.32" y="-7.62" length="middle"/>
-<pin name="SCL" x="-20.32" y="-5.08" length="middle"/>
-<pin name="GPIO0" x="-20.32" y="2.54" length="middle"/>
-<pin name="GPIO1" x="-20.32" y="7.62" length="middle"/>
-<pin name="AVDD" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="AVSS_VCSEL" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="AVDD_VCSEL" x="20.32" y="5.08" length="middle" rot="R180"/>
-<wire x1="-15.24" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
-<text x="-15.24" y="11.43" size="1.6764" layer="94" ratio="15">&gt;NAME</text>
-<text x="-15.24" y="-12.7" size="1.6764" layer="94" ratio="15">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="VL6180" prefix="U">
-<gates>
-<gate name="G$1" symbol="VL6180" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="VL6180">
-<connects>
-<connect gate="G$1" pin="AVDD" pad="10"/>
-<connect gate="G$1" pin="AVDD_VCSEL" pad="8"/>
-<connect gate="G$1" pin="AVSS_VCSEL" pad="9"/>
-<connect gate="G$1" pin="GND" pad="12"/>
-<connect gate="G$1" pin="GPIO0" pad="4"/>
-<connect gate="G$1" pin="GPIO1" pad="1"/>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-12007" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Passives">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
@@ -17851,6 +17725,154 @@ High-power, low thermal resistance package.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Sensors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="VL6180">
+<circle x="-1.905" y="-0.381" radius="0.127" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.4" x2="2.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="1.4" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.2032" layer="21"/>
+<smd name="1" x="-1.875" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="2" x="-1.125" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="3" x="-0.375" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="4" x="0.375" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="5" x="1.125" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="6" x="1.875" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="7" x="1.875" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="8" x="1.125" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="9" x="0.375" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="10" x="-0.375" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="11" x="-1.125" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="12" x="-1.875" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<text x="-2.54" y="1.778" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<polygon width="0.127" layer="31">
+<vertex x="-1.875" y="-0.825" curve="-90"/>
+<vertex x="-1.725" y="-0.975" curve="-90"/>
+<vertex x="-1.875" y="-1.125" curve="-90"/>
+<vertex x="-2.025" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-1.125" y="-0.825" curve="-90"/>
+<vertex x="-0.975" y="-0.975" curve="-90"/>
+<vertex x="-1.125" y="-1.125" curve="-90"/>
+<vertex x="-1.275" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-0.375" y="-0.825" curve="-90"/>
+<vertex x="-0.225" y="-0.975" curve="-90"/>
+<vertex x="-0.375" y="-1.125" curve="-90"/>
+<vertex x="-0.525" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="0.375" y="-0.825" curve="-90"/>
+<vertex x="0.525" y="-0.975" curve="-90"/>
+<vertex x="0.375" y="-1.125" curve="-90"/>
+<vertex x="0.225" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.125" y="-0.825" curve="-90"/>
+<vertex x="1.275" y="-0.975" curve="-90"/>
+<vertex x="1.125" y="-1.125" curve="-90"/>
+<vertex x="0.975" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.875" y="-0.825" curve="-90"/>
+<vertex x="2.025" y="-0.975" curve="-90"/>
+<vertex x="1.875" y="-1.125" curve="-90"/>
+<vertex x="1.725" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.875" y="1.125" curve="-90"/>
+<vertex x="2.025" y="0.975" curve="-90"/>
+<vertex x="1.875" y="0.825" curve="-90"/>
+<vertex x="1.725" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.125" y="1.125" curve="-90"/>
+<vertex x="1.275" y="0.975" curve="-90"/>
+<vertex x="1.125" y="0.825" curve="-90"/>
+<vertex x="0.975" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="0.375" y="1.125" curve="-90"/>
+<vertex x="0.525" y="0.975" curve="-90"/>
+<vertex x="0.375" y="0.825" curve="-90"/>
+<vertex x="0.225" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-0.375" y="1.125" curve="-90"/>
+<vertex x="-0.225" y="0.975" curve="-90"/>
+<vertex x="-0.375" y="0.825" curve="-90"/>
+<vertex x="-0.525" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-1.125" y="1.125" curve="-90"/>
+<vertex x="-0.975" y="0.975" curve="-90"/>
+<vertex x="-1.125" y="0.825" curve="-90"/>
+<vertex x="-1.275" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-1.875" y="1.125" curve="-90"/>
+<vertex x="-1.725" y="0.975" curve="-90"/>
+<vertex x="-1.875" y="0.825" curve="-90"/>
+<vertex x="-2.025" y="0.975" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="VL6180">
+<wire x1="-15.24" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<pin name="AVDD" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="AVDD_VCSEL" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="AVSS_VCSEL" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO0" x="-20.32" y="2.54" length="middle"/>
+<pin name="GPIO1" x="-20.32" y="7.62" length="middle"/>
+<pin name="SCL" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SDA" x="-20.32" y="-7.62" length="middle"/>
+<text x="-15.24" y="11.43" size="1.6764" layer="94" ratio="15">&gt;NAME</text>
+<text x="-15.24" y="-12.7" size="1.6764" layer="94" ratio="15">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VL6180" prefix="U">
+<gates>
+<gate name="G$1" symbol="VL6180" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VL6180">
+<connects>
+<connect gate="G$1" pin="AVDD" pad="10"/>
+<connect gate="G$1" pin="AVDD_VCSEL" pad="8"/>
+<connect gate="G$1" pin="AVSS_VCSEL" pad="9"/>
+<connect gate="G$1" pin="GND" pad="12"/>
+<connect gate="G$1" pin="GPIO0" pad="4"/>
+<connect gate="G$1" pin="GPIO1" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12007" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17862,7 +17884,7 @@ High-power, low thermal resistance package.</description>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="U1" library="VL6180" deviceset="VL6180" device=""/>
+<part name="U1" library="SparkFun-Sensors" deviceset="VL6180" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NC_BY_PASTE" device="" value=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="2.2KOHM1/10W1%(0603)" device="" value="2.2k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="2.2KOHM1/10W1%(0603)" device="" value="2.2k"/>
